@@ -54,6 +54,7 @@ body {
 
 main{
   max-width: 1366;
+  margin: 0 auto;
 }
 a:focus {
   outline: none;
@@ -149,6 +150,10 @@ img {
 
 .slider__item {
   transition: 0.3s ease-in;
+}
+
+.contacts__map-wrapper {
+	max-width: 1000px;
 }
 
 .map {
@@ -356,8 +361,19 @@ img {
   margin-right: auto;
   width: 71.01%;
   min-width: 970px;
-  max-width: 1440px;
+  max-width: 1000px;
 }
+
+.main_block_wrapper, 
+.process__wrapper,
+.advantages__wrapper,
+.teachers__header-wrapper,
+.slider__wrapper,
+.contacts__text-wrapper { 
+	max-width: 1000px;
+}
+
+
 
 .process__wrapper::before,
 .process__wrapper::after {
@@ -436,7 +452,7 @@ img {
 }
 
 .advantages__wrapper {
-  max-width: 1440px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -496,7 +512,7 @@ img {
   padding-left: 3px;
   width: 71.44%;
   min-width: 976px;
-  max-width: 1440px;
+  max-width: 1000px;
 }
 
 .our-groups__wrapper::before {
@@ -552,10 +568,16 @@ img {
   min-height: 321px;
   margin-right: 0;
   margin-bottom: 30px;
-  border-radius: 12px;
-  border: 3px solid #7B97F6;
   background-color: transparent;
   perspective: 1000px;
+}
+
+.our-groups__button {
+	margin: 36px;
+}
+
+.our-groups__description {
+	color: #f7fafc;
 }
 
 .our-groups__item:hover
@@ -591,13 +613,22 @@ img {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 12px;
+  border: 3px solid #7B97F6;
 }
 
 .our-groups__article-back {
   backface-visibility: hidden;
-  background-color: #2980b9;
-  color: white;
+  background-color: #f7fafc;
+  color: black;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+}
+
+.our-groups_description {
+	margin: auto;
 }
 
 .our-groups__article-header {
@@ -738,7 +769,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 90px;
-  max-width: 1440px;
+  max-width: 1000px;
 }
 
 .banner__header {
